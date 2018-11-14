@@ -2,12 +2,12 @@ package handlers
 
 import (
 	"database/sql"
+	"myEchoTest/chapter2/bindings"
+	"myEchoTest/chapter2/models"
+	"myEchoTest/chapter2/renderings"
 	"net/http"
 	"time"
 
-	"github.com/PacktPublishing/Echo-Essentials/chapter2/bindings"
-	"github.com/PacktPublishing/Echo-Essentials/chapter2/models"
-	"github.com/PacktPublishing/Echo-Essentials/chapter2/renderings"
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/labstack/echo"
 	"golang.org/x/crypto/bcrypt"
