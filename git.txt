@@ -1,0 +1,6 @@
+ git init
+ git clone https://github.com/safaraliqulizade/go.git
+ git add .\myEchoTest\
+ git commit -m "first version of my go trying ..."
+ git remote add git_hub_go https://github.com/safaraliqulizade/go.git
+ git push --set-upstream git_hub_go master
