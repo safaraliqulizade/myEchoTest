@@ -1,14 +1,11 @@
 package main
 
 import (
-	"database/sql"
-	"log"
 	"myEchoTest/chapter2/handlers"
 	"myEchoTest/chapter2/models"
 
 	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
-	_ "github.com/mattn/go-sqlite3"
+	//_ "github.com/mattn/go-sqlite3"
 )
 
 func main() {
@@ -25,7 +22,7 @@ func main() {
 	})
 
 	// add database to context
-	db, err := sql.Open("sqlite3", "./service.db")
+	/* db, err := sql.Open("sqlite3", "./service.db")
 	if err != nil {
 		log.Fatalf("error opening database: %v\n", err)
 	}
@@ -39,6 +36,7 @@ func main() {
 	reminderGroup := e.Group("/reminder")
 	reminderGroup.Use(middleware.JWT(signingKey))
 	reminderGroup.POST("", handlers.CreateReminder)
+	*/
 
 	// Route / to handler function
 	e.GET("/health-check", handlers.HealthCheck)
