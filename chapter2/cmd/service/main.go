@@ -3,13 +3,12 @@ package main
 import (
 	"database/sql"
 	"log"
+	"myEchoTest/chapter2/handlers"
+	"myEchoTest/chapter2/models"
 
-	_ "github.com/mattn/go-sqlite3"
-
-	"github.com/PacktPublishing/Echo-Essentials/chapter2/handlers"
-	"github.com/PacktPublishing/Echo-Essentials/chapter2/models"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	_ "github.com/mattn/go-sqlite3"
 )
 
 func main() {
